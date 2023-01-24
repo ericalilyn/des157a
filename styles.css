@@ -50,7 +50,7 @@ header
 #image
 {
     max-width: 1090px;
-    max-height: 220px;
+    max-height: 215px;
     position: relative;
     top: 5px;
     left: 5px;
@@ -85,7 +85,7 @@ header
     font-style: italic;
     text-transform: lowercase;
     position: relative;
-    top: -8px;
+    top: -5px;
 }
 
 #sea
@@ -131,6 +131,7 @@ section
     border-width: 2px;
     border-color: #1E1E1E;
     min-width: 250px;
+    min-height: 340px;
     padding-right: 32px;
     line-height: 1.5em;
     position: relative;
@@ -155,6 +156,12 @@ section h2
 {
     position: relative;
     top: 12px;
+}
+
+section ul
+{
+    list-style-type: none;
+    padding-inline-start: 0;
 }
 
 section li
