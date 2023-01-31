@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <style>
+        body, h1
+        {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Experiment 2</h1>
+    </header>
+    <main class="hashtags">
+        <p id="first">#</p>
+        <p id="second">##</p>
+        <p id="third">###</p>
+        <p id="fourth">####</p>
+        <p id="fifth">#####</p>
+        <p id="sixth">######</p>
+        <p id="seventh">#######</p>
+    </main>
+    <script>
+        // My program changes the color of the hashtag symbols based on user input of favorite color from the rainbow. If the user inputs any of the ROYGBIV colors, the hashtag triange will appear in the respective color. If the user inputs the word 'random', the triangle will appear in a random ROYGBIV color. If the user inputs the word 'rainbow', the lines of the triangle will appear in the ROYGBIV color order. If the user cancels the prompt, does not enter any text, or does not not input any of the aforementioned keywords, the triangle will not change color (defaults to white).
+
+        var favColor = prompt('What is your favorite color from the rainbow? \nIf you cannot pick one, enter "random". \nIf you like all the colors, enter "rainbow".', '');
+        var rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+        var allPs = document.getElementsByTagName('p');
+        var randomColor = rainbow[randomInt(0, rainbow.length-1)];
+
+        function randomInt(min, max)
+        {
+            return Math.floor((max - min + 1) * Math.random()) + min;
+        }
+
+        if (favColor == "red" || favColor == "orange" || favColor == "yellow" || favColor == "green" || favColor == "blue" || favColor == "indigo" || favColor == "violet")
+        {
+            for (var i = 0; i < allPs.length; i++)
+            {
+                allPs[i].style.color = `${favColor}`;
+            }
+        }
+        else if (favColor == "random")
+        {
+            favColor = randomColor;
+            for (var i = 0; i < allPs.length; i++)
+            {
+                allPs[i].style.color = `${favColor}`;
+            }
+        }
+        else if (favColor == "rainbow")
+        {
+            for (var i = 0; i < 7; i++)
+            {
+                if (i === 0) //first call
+                {
+                    document.getElementById('first').style.color = "red";
+                }
+                if (i === 1) //second call
+                {
+                    document.getElementById('second').style.color = "orange";
+                }
+                if (i === 2) //third call
+                {
+                    document.getElementById('third').style.color = "yellow";
+                }
+                if (i === 3) //fourth call
+                {
+                    document.getElementById('fourth').style.color = "green";
+                }
+                if (i === 4) //fifth call
+                {
+                    document.getElementById('fifth').style.color = "blue";
+                }
+                if (i === 5) //sixth call
+                {
+                    document.getElementById('sixth').style.color = "indigo";
+                }
+                if (i === 6) //seventh call
+                {
+                    document.getElementById('seventh').style.color = "violet";
+                }    
+            }
+        }
+    </script>
+</body>
+</html>
