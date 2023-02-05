@@ -1,0 +1,122 @@
+body
+{
+    max-width: 1200px;
+    display: flex;
+    background-color: #1E1E1E;
+    color: #1E1E1E;
+}
+
+#left, #right
+{
+    min-width: 50vw;
+    text-align: center;
+}
+
+#left
+{
+    min-height: 1650px;
+    background-color: #1E1E1E;
+}
+
+#right
+{
+    max-height: 1650px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FDF9F1;
+}
+
+header
+{
+    max-width: 550px;
+    max-height: 900px;
+    margin: 0 auto;
+    position: sticky;
+    top: 150px; 
+}
+
+header h1
+{
+    color: #9CAF88;
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 100px;
+}
+
+header div
+{
+    color: #FDF9F1;
+    font-family: 'Della Respira', serif;
+}
+
+header h2
+{
+    text-transform: uppercase;
+    font-size: 28px;
+    padding-top: 75px;
+}
+
+header h3
+{
+    font-size: 17px;
+    padding-top: 75px;
+}
+
+article
+{
+    max-width: 475px;
+    max-height: 600px;
+    margin: 20px auto 155px auto;
+    padding-bottom: 35px;
+}
+
+article div h2
+{
+    color: #9CAF88;
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 39px;
+}
+
+article div h3
+{
+    font-size: 25px;
+}
+
+article div
+{
+    font-family: 'Della Respira', serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+p
+{
+    font-family: 'Cormorant Garamond', serif;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 1.25em;
+}
+
+a
+{
+    background-color: #9CAF8877;
+    color: #1E1E1E;
+    text-decoration: double;
+}
+
+a:hover
+{
+    background-color: #9CAF88;
+}
+
+.beginning
+{
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.indent
+{
+    text-indent: 30px;
+}

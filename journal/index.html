@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Della+Respira&family=Fleur+De+Leah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Erica's Learning Journal</title>
+</head>
+<body>
+    <section id="left">
+        <header>
+            <h1>Learning Journal</h1>
+            <div>
+                <h2 id="name">Erica Ng</h2>
+                <h3 id="course">DES 157A</h2>
+            </div>
+        </header>
+    </section>
+
+    <section id="right">
+        <article>
+            <div>
+                <h2>02</h2>
+                <h3>Overlays Design Pattern Research</h3>
+                <time datetime="2023-02-07">February 04, 2023</time>
+            </div>
+            <p><span class="beginning">T</span>he article on <a href="https://uxplanet.org/best-practices-for-modals-overlays-dialog-windows-c00c66cddd8c">best practices for overlay windows</a> by Naema Baskanderi addresses an interesting pattern in UI/UX design: the window within a window. Having been mostly on the receiving end of such UI patterns, and recently on the design side, it was surprising to see that I did not know how to label this particular one. From my own user experience, I would refer to these smaller window elements as popup windows. According to the article, this seems to be an outdated term meant for the "dreaded" window that would pop up, which I am guessing is akin to old school error messages or any of those insistent popup ads. The use of 'overlays' for this design pattern sounds vaguely familiar, and makes the most sense, because visually speaking it is placed on top of the main window. However, 'modals' and 'dialogs' are entirely new vocabulary for me. Modals took me longer to grasp, but the operative word being mode is telling of its function that "creates a mode that disables the main window but keeps it visible." The one that really confused me was dialogs—it is apparently associated with retrieving user input. I am not sure if it is just technical designer language, but all these different names for this one UI pattern was kind of confusing. At times, I could not tell what exactly a term being used was alluding to, but otherwise reading about the topic was understandable and I got the general idea of the do's and don'ts when it comes to using it.</p>
+        </article>
+
+        <article>
+            <div>
+                <h2>01</h2>
+                <h3>Form Design Research</h3>
+                <time datetime="2023-01-30">January 31, 2023</time>
+            </div>
+            <p><span class="beginning">T</span>he article on <a href="https://uxdesign.cc/best-practices-for-form-design-ff5de6ca8e5f">best practices for form design</a> by Salim Ansari relays the value in improving usability of forms. The goal of designing a form is to ensure that filling out the form feels less like a chore for the user—it should be a straightforward, simple, and easy process. Some of the tips discussed include the need for transparency and understanding expectations of users. As a web user who has filled out many forms, I often feel productive if I can see my progress. Being able to know that I am at the halfway point or only a few steps away from completion allows me to see it as the form guiding me, instead of making me go "oh, there's more" and feeling overwhelmed. Ansari also notes the user preference for tab key navigation, increasing the workflow of moving between input fields. Thus, designing the form to accommodate this common pattern in online forms is to be expected.</p>
+            <p class="indent">Many examples of these features in forms lead them to having better design practice and usability. One website that exemplifies this is the <a href="https://www.16personalities.com/free-personality-test">16Personalities</a> test form, which consists of ten pages of input fields. The percentage bar that increases with each page completed lets users know how far along the test they are, which is helpful for getting through long and tedious forms. The form also includes auto scrolling to the next input field after the user completes the previous one, given the input type is not very usable with the tab key shortcut.
+            </p>
+        </article>        
+    </section>
+</body>
+</html>
