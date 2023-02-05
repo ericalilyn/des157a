@@ -14,13 +14,13 @@ body
 
 #left
 {
-    min-height: 1650px;
+    /* min-height: 1750px; */
     background-color: #1E1E1E;
 }
 
 #right
 {
-    max-height: 1650px;
+    /* max-height: 1750px; */
     display: flex;
     flex-direction: column;
     background-color: #FDF9F1;
@@ -64,9 +64,9 @@ header h3
 article
 {
     max-width: 475px;
-    max-height: 600px;
-    margin: 20px auto 155px auto;
-    padding-bottom: 35px;
+    max-height: 33vh;
+    margin: 0 auto;
+    padding-bottom: 500px;
 }
 
 article div h2
@@ -86,8 +86,7 @@ article div
     font-family: 'Della Respira', serif;
     text-transform: capitalize;
     letter-spacing: 1px;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 p
