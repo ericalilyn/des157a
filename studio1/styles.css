@@ -1,0 +1,91 @@
+body
+{
+    background-color: #021835;
+    font-family: 'Inter', sans-serif;
+    max-width: 1200px;
+    max-height: 750px;
+    margin: 0 auto;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+header h2
+{
+    color: #FEFFFF;
+    font-size: 70px;
+    text-align: center;
+    width: 90px;
+    position: relative;
+    top: -60px;
+}
+
+header h3
+{
+    color: #BDC2CA;
+    background-color: #405368;
+    font-weight: 400;
+    font-size: 16px;
+    width: 450px;
+    height: 33px;
+    padding: 15px 0 0 15px;
+    border-radius: 5px;
+}
+
+input, label, select
+{
+    display: block;    
+    position: relative;
+    margin: 0 auto;
+    width: 375px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+}
+
+input[type="submit"]
+{
+   margin-top: 20px;
+}
+
+main
+{
+    color: #FEFFFF;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -100px;
+}
+
+main h1
+{
+    font-size: 70px;
+}
+
+#welcome-view
+{
+    visibility: hidden;
+}
+
+#results-view
+{
+    visibility: hidden;
+    color: #020202;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    color: #FEFFFF;
+}
+
+footer a
+{
+    color: #FEFFFF;
+    text-decoration: none;
+}
