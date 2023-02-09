@@ -42,44 +42,79 @@ input, label, select
     position: relative;
     margin: 0 auto;
     width: 375px;
-    height: 35px;
+    height: 40px;
     border-radius: 10px;
     border: none;
     outline: 0;
 }
 
+input[type="button"]
+{
+    background-color: #00B8FF;
+    font-weight: 500;
+    border-radius: 2.5px;
+}
+
+
 input[type="submit"]
 {
-   margin-top: 20px;
+    margin-top: 20px;
+}
+
+#tumblr
+{
+    font-size: 75px;
+    margin-top: 125px;
+    font-weight: 700;
 }
 
 main
 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     color: #FEFFFF;
     font-size: 20px;
     text-align: center;
-    margin-top: -100px;
+    /* margin-top: -100px; */
 }
 
-main h1
+section
 {
-    font-size: 70px;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-20%);
 }
 
 #welcome-view
 {
-    visibility: hidden;
+    line-height: 3em;
 }
 
 #results-view
 {
-    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: #FEFFFF;
     color: #020202;
+}
+
+#results-view div
+{
+    width: 310px;
+    margin: 0 auto;
 }
 
 footer
 {
     display: flex;
+    padding: 15px;
+    margin-top: 480px;
     justify-content: space-between;
     color: #FEFFFF;
 }
@@ -88,4 +123,14 @@ footer a
 {
     color: #FEFFFF;
     text-decoration: none;
+}
+
+.showing
+{
+    visibility: visible;
+}
+
+.hidden
+{
+    visibility: hidden;
 }

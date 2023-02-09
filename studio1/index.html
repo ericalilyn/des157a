@@ -17,49 +17,84 @@
         <h3>inspired by Tumblr</h3>
     </header>
     <main>
-        <h1>tumblr</h1>
-        <form>
-            <label for="artist">Name of an artist</label>
-            <input type="text" id="artist" required>
+        <h1 id="tumblr" class="showing">tumblr</h1>
+        <section id="welcome-view" class="showing">
+            <p>Welcome to your Tumblr!</p>
+            <input type="button" id="input0submit" value="Start">
+        </section>
 
-            <label for="year">Year</label>
-            <input type="text" id="year" required>
+        <section id="input-view" class="hidden">
+            <form>
+                <div id="input1">
+                    <label for="artist">Name of an artist</label>
+                    <input type="text" id="artist" required>
+                    <button id="input1submit">Next</button>
+                </div>
 
-            <label for="adjective">Adjective</label>
-            <input type="text" id="adjective" required>
+                <div id="input2">
+                    <label for="year">Year</label>
+                    <input type="text" id="year" required>
+                    <button id="input2submit">Next</button>
+                </div>
 
-            <label for="month">Month</label>
-            <input type="text" id="month" required>
+                <div id="input3">
+                    <label for="adjective">Adjective</label>
+                    <input type="text" id="adjective" required>
+                    <button id="input3submit">Next</button>
+                </div>
 
-            <label for="verb">Verb</label>
-            <input type="text" id="verb" required>
+                <div id="input4">
+                    <label for="month">Month</label>
+                    <input type="text" id="month" required>
+                    <button id="input4submit">Next</button>
+                </div>
+                
+                <div id="input5">
+                    <label for="verb">Verb</label>
+                    <input type="text" id="verb" required>
+                    <button id="input5submit">Next</button>
+                </div>
 
-            <label for="noun">Noun</label>
-            <input type="text" id="noun" required>
+                <div id="input6">
+                    <label for="noun">Noun</label>
+                    <input type="text" id="noun" required>
+                    <button id="input6submit">Next</button>
+                </div>
 
-            <label for="aesthetic-word">Aesthetic word</label>
-            <input type="text" id="aesthetic-word" required>
-            
-            <label for="painting-style">Painting style</label>
-            <select id="painting-style">
-                <option value="Default">ㅤ</option>
-                <option value="Impressionist">Impressionist</option>
-                <option value="Neoclassical">Neoclassical</option>
-                <option value="Renaissance">Renaissance</option>
-                <option value="Art Nouveau">Art Nouveau</option>
-            </select>
-            <input type="submit" value="Submit">
-        </form>
+                <div id="input7">
+                    <label for="aesthetic-word">Aesthetic word</label>
+                    <input type="text" id="aesthetic-word" required>
+                    <button id="input7submit">Next</button>
+                </div>
+
+                <div id="input8">
+                    <label for="painting-style">Painting style</label>
+                    <select id="painting-style">
+                        <option value="Default">ㅤ</option>
+                        <option value="Impressionist">Impressionist</option>
+                        <option value="Neoclassical">Neoclassical</option>
+                        <option value="Renaissance">Renaissance</option>
+                        <option value="Art Nouveau">Art Nouveau</option>
+                    </select>
+                    <input type="submit" id="input8submit" value="Submit">
+                </div>
+            </form>
+        </section>
+        
+        <section id="results-view" class="hidden">
+            <div>
+                <img>
+                <p>username1</p>
+            </div>
+            <div>
+                <img>
+                <p>username2</p>
+            </div>
+        </section>
     </main>
-    <section id="welcome-view">
-        <p>Welcome to your Tumblr!</p>
-        <input type="button" value="Start">
-    </section>
-    <section id="results-view">
-
-    </section>
+    
     <footer>
-        <a href="mailto:&#101;&#114;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Contact</a>
+        <p><a href="mailto:&#101;&#114;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Contact</a></p>
         <p>Posted by <a href=""><b>ericawithac</b></a></p>
     </footer>
 </body>
