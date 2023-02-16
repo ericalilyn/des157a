@@ -64,9 +64,14 @@ header h3
 article
 {
     max-width: 475px;
-    max-height: 33vh;
+    max-height: 30vh;
     margin: 0 auto;
-    padding-bottom: 500px;
+    padding-bottom: 600px;
+}
+
+#withimages
+{
+    margin-bottom: 1000px;
 }
 
 article div h2
@@ -87,6 +92,11 @@ article div
     text-transform: capitalize;
     letter-spacing: 1px;
     padding-bottom: 30px;
+}
+
+.parttwo
+{
+    margin-top: 50px;
 }
 
 p
@@ -118,4 +128,17 @@ a:hover
 .indent
 {
     text-indent: 30px;
+}
+
+img
+{
+    display: block;
+    width: 100%;
+}
+
+figcaption
+{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    line-height: 1.5em;
 }

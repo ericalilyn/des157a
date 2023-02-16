@@ -12,13 +12,12 @@
 </head>
 <body>
     <header>
-        <!-- <img src="" alt="hand-drawn Tumblr logo"> -->
         <h2>t</h2>
         <h3>inspired by Tumblr</h3>
     </header>
     <main>
-        <h1 id="tumblr" class="showing">tumblr</h1>
-        <section id="welcome-view" class="showing">
+        <h1 id="tumblr" class="hidden">tumblr</h1>
+        <section id="welcome-view" class="hidden">
             <p>Welcome to your Tumblr!</p>
             <input type="button" id="input0submit" value="Start">
         </section>
@@ -28,67 +27,88 @@
                 <div id="input1">
                     <label for="artist">Name of an artist</label>
                     <input type="text" id="artist" required>
+                    <label for="artist" class="pagecount">Page 1 / 8</label>
                     <button id="input1submit">Next</button>
+                    <p id="input1back">Previous</p>
                 </div>
 
                 <div id="input2">
                     <label for="year">Year</label>
                     <input type="text" id="year" required>
+                    <label for="year" class="pagecount">Page 2 / 8</label>
                     <button id="input2submit">Next</button>
+                    <p id="input2back">Previous</p>
                 </div>
 
                 <div id="input3">
                     <label for="adjective">Adjective</label>
                     <input type="text" id="adjective" required>
+                    <label for="adjective" class="pagecount">Page 3 / 8</label>
                     <button id="input3submit">Next</button>
+                    <p id="input3back">Previous</p>
                 </div>
 
                 <div id="input4">
                     <label for="month">Month</label>
                     <input type="text" id="month" required>
+                    <label for="month" class="pagecount">Page 4 / 8</label>
                     <button id="input4submit">Next</button>
+                    <p id="input4back">Previous</p>
                 </div>
                 
                 <div id="input5">
                     <label for="verb">Verb</label>
                     <input type="text" id="verb" required>
+                    <label for="verb" class="pagecount">Page 5 / 8</label>
                     <button id="input5submit">Next</button>
+                    <p id="input5back">Previous</p>
                 </div>
 
                 <div id="input6">
                     <label for="noun">Noun</label>
                     <input type="text" id="noun" required>
+                    <label for="noun" class="pagecount">Page 6 / 8</label>
                     <button id="input6submit">Next</button>
+                    <p id="input6back">Previous</p>
                 </div>
 
                 <div id="input7">
                     <label for="aesthetic-word">Aesthetic word</label>
                     <input type="text" id="aesthetic-word" required>
+                    <label for="aesthetic" class="pagecount">Page 7 / 8</label>
                     <button id="input7submit">Next</button>
+                    <p id="input7back">Previous</p>
                 </div>
 
                 <div id="input8">
                     <label for="painting-style">Painting style</label>
-                    <select id="painting-style">
+                    <select id="painting-style" required>
                         <option value="Default">ㅤ</option>
                         <option value="Impressionist">Impressionist</option>
                         <option value="Neoclassical">Neoclassical</option>
                         <option value="Renaissance">Renaissance</option>
                         <option value="Art Nouveau">Art Nouveau</option>
                     </select>
+                    <label for="aesthetic" class="pagecount">Page 8 / 8</label>
                     <input type="submit" id="input8submit" value="Submit">
+                    <p id="input8back">Previous</p>
                 </div>
             </form>
         </section>
         
-        <section id="results-view" class="hidden">
-            <div>
-                <img>
-                <p>username1</p>
-            </div>
-            <div>
-                <img>
-                <p>username2</p>
+        <section id="results-view" class="showing">
+            <div id="container">
+                <section id="left">
+                    <div></div>
+                </section>
+                <section id="center">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                </section>
+                <section id="right">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                </section>
             </div>
         </section>
     </main>
