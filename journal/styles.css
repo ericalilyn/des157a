@@ -14,13 +14,11 @@ body
 
 #left
 {
-    /* min-height: 1750px; */
     background-color: #1E1E1E;
 }
 
 #right
 {
-    /* max-height: 1750px; */
     display: flex;
     flex-direction: column;
     background-color: #FDF9F1;
@@ -133,7 +131,8 @@ a:hover
 img
 {
     display: block;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 figcaption
