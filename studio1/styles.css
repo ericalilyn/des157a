@@ -5,7 +5,7 @@ body
     max-width: 1200px;
     max-height: 750px;
     margin: 0 auto;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 header
@@ -32,7 +32,7 @@ header h3
     font-weight: 400;
     font-size: 16px;
     width: 450px;
-    height: 33px;
+    height: 47px;
     padding: 15px 0 0 15px;
     border-radius: 5px;
 }
@@ -102,7 +102,6 @@ main
     color: #FEFFFF;
     font-size: 20px;
     text-align: center;
-    /* margin-top: -100px; */
 }
 
 section
@@ -125,13 +124,154 @@ form div
     transform: translate(-50%,-45%);
 }
 
-
-
-/* #results-view div
+* 
 {
-    width: 310px;
-    margin: 0 auto;
-} */
+    box-sizing: border-box;
+}
+
+#results-view
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+#results-main
+{
+    display: flex;
+    width: 90vw;
+    height: 100%;
+    max-width: 1200px;
+    min-width: 800px;
+    max-height: 750px;
+    min-height: 500px;
+}
+
+#results-view section
+{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 600px;
+    padding: 20px;
+    background-color: #021835;
+    color: #020202;
+    font-size: 16px;
+    margin-top: -350px;
+}
+
+#left
+{
+    position: relative;
+    left: 70px;
+}
+
+#right
+{
+    position: relative;
+    left: 400px;
+}
+
+.singular, .top, .bottom
+{
+    flex-grow: 1;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.singular
+{
+    background-color: #FEFFFF;
+    display: block;
+}
+
+.top
+{
+    background-color: #132943;
+    color: #FEFFFF;
+}
+
+.bottom
+{
+    max-height: 100px;
+    background-color: #132943;
+}
+
+.profilepic
+{
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.userlabel, #cta
+{
+    display: flex;
+}
+
+.username
+{
+    font-weight: 700;
+    font-size: 14px;
+    color: #020202;
+    margin-top: 25px;
+}
+
+.caption
+{
+    display: flex;
+    padding: 20px;
+}
+
+#coverpic
+{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#tag-label
+{
+    font-size: 24px;
+}
+
+.cta-style
+{
+    background-color: #00B8FF;
+    color: #021835;
+    font-size: 16px;
+    font-weight: 700;
+    width: 135px;
+    padding: 15px;
+    margin: 3px;
+    position: relative;
+    left: 9px;
+    border-radius: 5px;
+}
+
+li
+{
+    position: relative;
+    left: -15px;
+    list-style: none;
+}
+
+#username3
+{
+    color: #FEFFFF;
+}
+
+#bio
+{
+    display: flex;
+    color: #405368;
+    font-size: 12px;
+    margin: 0;
+}
+
+.bottom p
+{
+    text-align: left;
+}
 
 footer
 {

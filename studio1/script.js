@@ -11,7 +11,6 @@
     document.getElementById('input5submit').addEventListener('click', toInput6);
     document.getElementById('input6submit').addEventListener('click', toInput7);
     document.getElementById('input7submit').addEventListener('click', toInput8);
-    document.getElementById('input8submit').addEventListener('click', toOutput);
 
     document.getElementById('input1back').addEventListener('click', toInput0);
     document.getElementById('input2back').addEventListener('click', toInput1);
@@ -21,6 +20,21 @@
     document.getElementById('input6back').addEventListener('click', toInput5);
     document.getElementById('input7back').addEventListener('click', toInput6);
     document.getElementById('input8back').addEventListener('click', toInput7);
+
+    const myForm = document.querySelector('#myform');
+    const paintingCap = document.querySelector('#caption1');
+    const photoCap = document.querySelector('#caption2');
+    const aestheticUser = document.querySelector('#username2');
+    const blogUser = document.querySelector('#username3');
+    const blogBio = document.querySelector('#bio');
+    const paintingTag = document.querySelector('#hashtag');
+
+    let textPaintingCap; 
+    let textPhotoCap; 
+    let textAestheticUser; 
+    let textBlogUser; 
+    let textBlogBio; 
+    let textPaintingTag; 
 
     function toInput0(event)
     {
@@ -92,11 +106,44 @@
         document.getElementById('input8').className = 'showing';
     }
 
-    function toOutput(event)
+    myForm.addEventListener('submit', function(event)
     {
         event.preventDefault();
-        document.getElementById('input-view').className = 'hidden';
         document.getElementById('results-view').className = 'showing';
+        document.getElementById('input-view').className = 'hidden';
         document.getElementById('tumblr').className = 'hidden';
-    }
+        document.getElementById('info').className = 'hidden';
+        const artist = document.querySelector('#artist').value;
+        const year = document.querySelector('#year').value;
+        const adjective = document.querySelector('#adjective').value;
+        const month = document.querySelector('#month').value;
+        const verb = document.querySelector('#verb').value;
+        const noun = document.querySelector('#noun').value;
+        const aesthetic = document.querySelector('#aesthetic-word').value;
+        const painting = document.querySelector('#painting-style').value;
+
+        if (artist && year && adjective && month && verb && noun && aesthetic && painting) 
+        {
+            textPaintingCap = `Still life in a still life - ${artist}, ${year}.`; 
+            textPhotoCap = `${adjective} flowers, ${month} 2019`; 
+            textAestheticUser = `${aesthetic}`; 
+            textBlogUser = `${verb}-${noun}`; 
+            textBlogBio = `you're telling me a duck ${verb} this ${noun}`; 
+            textPaintingTag = `#${painting} art`; 
+        }
+        else
+        {
+            alert('Please complete the form')
+            document.getElementById('results-view').className = 'hidden';
+            document.getElementById('tumblr').className = 'showing';
+            document.getElementById('info').className = 'showing';
+        }
+
+        paintingCap.innerHTML = textPaintingCap;
+        photoCap.innerHTML = textPhotoCap;
+        aestheticUser.innerHTML = textAestheticUser;
+        blogUser.innerHTML = textBlogUser;
+        blogBio.innerHTML = textBlogBio;
+        paintingTag.innerHTML = textPaintingTag;
+    })
 }())
