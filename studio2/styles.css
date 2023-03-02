@@ -1,0 +1,121 @@
+* {
+	box-sizing: border-box;
+}
+
+main {
+	width: 30vw;
+	padding: 20px;
+}
+
+main img
+{
+	display: block;
+	position: absolute;
+	margin: 0;
+	width: 400px;
+}
+
+/* setting position values for each image */
+#image1
+{
+	left: 50%;
+	top: 150%;
+}
+
+#image2
+{
+	left: 10%;
+	top: 250%;
+}
+
+#image3
+{
+	left: 52%;
+	top: 350%;
+}
+
+#image4
+{
+	left: 5%;
+	top: 450%;
+}
+
+#image5
+{
+	left: 30%;
+	top: 550%;
+}
+
+#image6
+{
+	left: 65%;
+	top: 650%;
+}
+
+section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+figure {
+	display: block;
+	margin: 0;
+	width: 70vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: -1;
+}
+
+figure img {
+	position: absolute;
+	transition: all 3s ease;
+}
+
+/* setting initial image zoom section to fit viewport */
+.sect1{
+	width: 175vh;
+	top: 0;
+	left: 50%;
+	transform: translateX(-65%);
+}
+
+/* no zoom on .sect2 (first image) */
+
+/* setting zoom section width (last 5 images)*/
+.sect3,
+.sect4,
+.sect5,
+.sect6,
+.sect7{
+    width: 2500px;
+}
+
+/* setting zoom section location */
+.sect3 {
+    top: calc(-2000px + 200vh);
+    left: calc(-1250px + 25vw);
+}
+
+.sect4 {
+    top: calc(-2000px + 200vh);
+    left: calc(-1250px + 5vw);
+}
+
+.sect5 {
+	top: calc(-2000px + 200vh);
+    left: calc(-1250px - 25vw);
+}
+
+.sect6 {
+	top: calc(-2000px + 180vh);
+    left: calc(-1250px + 73vw);
+}
+
+.sect7 {
+	top: calc(-2000px + 165vh);
+    left: calc(-1250px + 50vw);
+}
