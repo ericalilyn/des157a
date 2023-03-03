@@ -67,9 +67,14 @@ article
     padding-bottom: 600px;
 }
 
-#withimages
+.withimages
 {
     margin-bottom: 1000px;
+}
+
+.withimage
+{
+    margin-bottom: 300px;
 }
 
 article div h2
@@ -133,6 +138,12 @@ img
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+#screenshot
+{
+    width: 200px;
+    margin: 0 auto;
 }
 
 figcaption
