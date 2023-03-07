@@ -1,0 +1,19 @@
+body
+{
+    background-color: lavender;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main
+{
+    text-align: center;
+}
+
+p
+{
+    line-height: 1.5em;
+    font-size: 17px;
+    width: 510px;
+    margin: 0 auto;
+    text-align: left;
+}
