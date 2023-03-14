@@ -44,7 +44,7 @@
 
 	window.addEventListener('load', function () 
 	{
-		alert("Hi User! Please complete these tasks:\n\n1. Hover around interesting areas in the photo\n2. Click on highlighted areas if they appear\n3. Exit zoomed view");
+		alert("Hi User! Please complete these tasks:\n\n1. Open and close the info overlay\n2. Click on highlighted areas if they appear\n3. Exit zoomed view");
 
 		// fade out div then set it to display none
 		const preloader = document.getElementById('preloader');
