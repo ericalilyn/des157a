@@ -1,0 +1,180 @@
+body {
+    font-family: 'Silkscreen', cursive;
+    font-size: 15px;
+    background-color: #74B3FF;
+    color: white;
+    overflow: hidden;
+    line-height: 1.5em;
+}
+
+h1, #leftscore, #rightscore
+{
+    font-family: 'Press Start 2P';
+    color: #B3A5A2;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: #0F0F0F 0 4px;
+    -webkit-text-stroke: #0F0F0F 1px;
+    font-size: 60px;
+    padding: 28px;
+}
+
+h1 span
+{
+    position: relative;
+    top: -18px;
+    font-size: 28px;
+}
+
+#leftplayer, #rightplayer, #carrot
+{
+    position: relative;
+    top: 175px;
+    transition: all 1s ease;
+}
+
+#leftplayer
+{
+    position: absolute;
+    left: 5%;
+}
+
+#rightplayer
+{
+    position: absolute;
+    right: 5%;
+}
+
+#carrot
+{
+    position: absolute;
+    top: 230px;
+    left: 49.85%;
+    transform: translate(-50%, -19.5%);
+    width: 160px;
+    z-index: 2;
+}
+
+button { 
+    background-color: #6A6A6A;
+    border-color: black;
+    color: white;
+    padding: 10px;
+}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+div {
+    position: relative;
+    top: 200px;
+    width: 100vw;
+    padding: 10px;
+}
+
+#background
+{
+    background-image: url("images/grass.png");
+    z-index: 1;
+    width: 100vw;
+    height: 70vh;
+    position: fixed;
+    top: 350px;
+}
+
+#game, #actions, #score, #gamecontrol, footer
+{
+    z-index: 2;
+    text-align: center;
+}
+
+#rules
+{
+    text-align: left;
+    position: relative;
+    top: 250px;
+    width: 700px;
+    margin: 0 auto;
+    line-height: 1.25em;
+    z-index: 3;
+}
+
+#gamecontrol
+{
+    position: relative;
+    top: 235px;
+    height: 50px;
+}
+
+#quit
+{
+    position: relative;
+    top: 220px;
+}
+
+#roll, #rollagain, #pass
+{
+    width: 150px;
+}
+
+#score, #leftscore, #rightscore
+{
+    position: fixed;
+}
+
+#score
+{
+    top: 420px;
+}
+
+#leftscore, #rightscore
+{
+    top: 375px;
+    font-size: 39px;
+}
+
+#leftscore
+{
+    left: 10%;
+}
+
+#rightscore
+{
+    right: 10%;
+}
+
+#leftdice, #rightdice
+{
+    width: 50px;
+}
+
+.showing
+{
+    visibility: visible;
+}
+
+.hidden
+{
+    visibility: hidden;
+}
+
+footer
+{
+    position: absolute;
+    top: 715px;
+    left: 48%;
+}
+
+footer a
+{
+    color: #3c7434;
+}
+
+/* #game {
+    background-color:#eaeaea;
+}
+#actions {
+    background-color: silver;
+} */
