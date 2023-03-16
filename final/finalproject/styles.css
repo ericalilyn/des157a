@@ -104,9 +104,7 @@ figcaption
 
 .sect2,
 .sect3,
-.sect4,
-.sect5,
-.sect6
+.sect4
 {
     width: 7000px;
 }
@@ -132,18 +130,6 @@ figcaption
 	width: 8000px;
     top: calc(-4314px + 80vh);
     left: calc(-3451px - 250vw);
-}
-
-.sect5 
-{
-	top: calc(-2000px + 180vh);
-    left: calc(-1250px + 73vw);
-}
-
-.sect6 
-{
-	top: calc(-2000px + 165vh);
-    left: calc(-1250px + 50vw);
 }
 
 .showing
