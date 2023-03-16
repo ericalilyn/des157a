@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Erica's Final Project</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+	<figure>
+		<img id="oceanbeach" src="images/ocean-beach.jpg" alt="photo of Ocean Beach facing north" class="sect1">
+		<img id="foggy" src="images/pictorialism.jpg" alt="black and white photo of Ocean Beach in foggy weather" class="sect1">
+		<img id="rosy" src="images/rose-colored.jpg" alt="rose tinted photo of Ocean Beach" class="sect1">
+		<img id="golden" src="images/golden-hour.jpg" alt="golden tinted photo of Ocean Beach during sunset" class="sect1">
+		<img id="engraving" src="images/ob-engraving.jpg" alt="photo of Ocean Beach engraving with shadow of photographer in view" class="notdisplaying">
+		<img id="shoreline" src="images/ob-shoreline.jpg" alt="photo of the beach shoreline during sunrise" class="notdisplaying">
+		<img id="sealrock" src="images/ob-seal-rock.jpg" alt="photo of Seal Rock" class="notdisplaying" >
+		<img id="cliffhouse" src="images/ob-cliff-house.jpg" alt="photo of Seal Rock and Cliff House" class="notdisplaying">
+		<img id="dunes" src="images/ob-dunes.jpg" alt="photo of Ocean Beach dunes" class="notdisplaying">
+		<img id="sunset" src="images/ob-sunset.jpg" alt="photo of the sun setting on the ocean horizon" class="notdisplaying">
+		<figcaption class="notdisplaying"></figcaption>
+	</figure>
+	<div id="preloader">
+		<div id="loadtext">Imagine a place.<br>Somewhere in the world you want to be.</div>
+	</div>
+	<div id="overlay">
+		<button id="imagebutton" class="notdisplaying">x</button>
+		<button id="overlaybutton">?</button>
+		<div id="instructions" class="hidden">
+			<ul>
+				<li>Hover and click on highlight areas to see photos of my memories at Ocean Beach</li>
+				<li>Press 'esc' to return to default view when on filtered view</li>
+				<li>There is audio, so be mindful about volume</li>
+			</ul>
+		</div>
+		<div id="shorearea" class="showing"></div>
+		<div id="rocksarea" class="showing"></div>
+		<div id="dunesarea" class="showing"></div>
+	</div>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
