@@ -74,10 +74,12 @@
             if (gameData.index === 1)
             {
                 leftPlayer.style.left = `5%`;
+                moveLeft = 5;
             }
             else
             {
                 rightPlayer.style.right = `5%`;
+                moveRight = 5;
             }
         }
 
@@ -192,7 +194,7 @@
         {
             if(gameData.score[gameData.index] > gameData.gameEnd)
             {
-                score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
+                score.innerHTML = `<h2>${gameData.players[gameData.index]}'s pig gets the carrot!</h2>`;
                 document.getElementById('quit').innerHTML = 'Start a New Game';
                 document.getElementById('gamestatus').className = 'hidden';
                 game.className = 'hidden';
